@@ -934,7 +934,7 @@ html {
 body {
     background:#fff;
     background-attachment:fixed;
-    cursor:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/normal.cur),auto
+    cursor:url(https://cdn.jsdelivr.net/gh/kaixc/cdn/cursor/normal.cur),auto
 }
 blockquote:before,blockquote:after,q:before,q:after {
     content:""
@@ -1074,7 +1074,7 @@ a:hover,a:active {
 }
 #video-btn,#video-add {
     position:absolute;
-    bottom:3px;
+    bottom:500px;
     right:5px;
     width:32px;
     height:32px;
@@ -1099,7 +1099,7 @@ a:hover,a:active {
 }
 #video-add {
     background-image:url('https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/add@32x32.png');
-    bottom:45px;
+    bottom:445px;
     display:none
 }
 .video-stu {
