@@ -134,6 +134,7 @@
     transform:scaleX(0)
 }
 .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+    animation: poi-face 10s ease-in-out infinite alternate;
     width:66px!important
 }
 .aplayer.aplayer-fixed.aplayer-narrow .aplayer-miniswitcher .aplayer-icon {
@@ -1369,6 +1370,7 @@ a:hover,a:active {
     z-index:9999
 }
 .site-branding {
+    animation: float 2.5s linear infinite;
     float:left;
     position:relative;
     height:75px;
@@ -1607,11 +1609,11 @@ a:hover,a:active {
     padding:40px 0 0
 }
 .site-content {
-    max-width:800px;
+    max-width:810px;
     padding:0 10px;
     margin-left:auto;
     margin-right:auto;
-    background-color:rgba(255,255,255,.8)
+    background-color:rgba(255,255,255,.7)
 }
 .post-list {
     margin:0 0 8% 0;
@@ -3965,7 +3967,8 @@ li.feature-2 {
     width: 100%;
     z-index: 0;
 }
-}.blank {
+
+.blank {
     padding-top:80px;
     background-color:rgba(255,255,255,1)
 }
@@ -3973,7 +3976,7 @@ li.feature-2 {
     position:relative;
     max-width:800px;
     padding:0 10px;
-    top:49.3%;
+    top:35%;
     left:50%;
     transform:translate(-50%,-50%);
     -webkit-transform:translate(-50%,-50%);
@@ -3990,10 +3993,10 @@ li.feature-2 {
     padding:2px;
     border-radius:100%
 }
-.focusinfo .header-tou img {
+.focusinfo .header-tou img{
     width:130px;
     height:130px;
-    box-shadow: 0 0 20px 20px #90c2ff86;
+    box-shadow: 0px 0px 20px 7px #b1beff;
     padding:5px;
     opacity:1;
     transform:rotate(0deg);
@@ -4076,6 +4079,7 @@ li.feature-2 {
     color:#2c3e50
 }
 .header-info {
+    box-shadow: 0px 0px 20px 7px #ffffff;
     width:63%;
     margin:auto;
     font-size:16px;
@@ -4100,8 +4104,9 @@ li.feature-2 {
     border-color:transparent transparent rgba(0,0,0,.5) transparent
 }
 .header-info p {
+    text-shadow: 0px 0px 20px rgb(105, 127, 255);
     margin:0;
-    font-family:'Ubuntu',sans-serif;
+    font-family:'pingfang sc',sans-serif;
     font-weight:700
 }
 .top-social {
@@ -4122,6 +4127,7 @@ li.feature-2 {
     margin-right:10px
 }
 .top-social_v2 {
+    animation: float 2s linear infinite;
     height:32px;
     margin-bottom:-15px;
     margin-left:10px;
@@ -6269,9 +6275,16 @@ button.botui-actions-buttons-button {
     cursor:pointer
 }
 .changeSkin-gear {
+    animation: float 2s ease-in-out infinite;
+    border-radius: 37px;
+    box-shadow: 1px 3px 20px 20px rgba(255, 158, 158, 0.37);
+    background: rgba(255, 158, 158, 0.37) !important;
+
+    text-shadow: 0px 0px 10px rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
     position:fixed;
-    bottom:-999px;
-    right:5px;
+    bottom:0px;
+    left:5px;
     width:auto;
     height:auto;
     z-index:99;
@@ -6279,7 +6292,7 @@ button.botui-actions-buttons-button {
     white-space:nowrap;
     padding:10px 10px;
     cursor:pointer;
-    border-radius:10px 10px 0 0
+    border-radius:25px ;
 }
 .changeSkin .keys {
     position:relative;
@@ -7447,7 +7460,7 @@ to {
     overflow:hidden
 }
 .chinese-font {
-    font-family:'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
+    font-family:'PingFang SC',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
 }
 .chinese-tranditional-font {
     font-family:Helvetica,Tahoma,Arial,"文泉驛正黑","WenQuanYi Zen Hei","儷黑 Pro","LiHei Pro","微軟正黑體","Microsoft JhengHei","標楷體",DFKai-SB,sans-serif
@@ -7465,7 +7478,7 @@ to {
     font-family:'Ubuntu',sans-serif
 }
 .serif {
-    font-family:'Source Han Serif SC','Source Han Serif','source-han-serif-sc','PT Serif','SongTi SC','MicroSoft Yahei',Georgia,serif
+    font-family:'PingFang SC','Source Han Serif','source-han-serif-sc','PT Serif','SongTi SC','MicroSoft Yahei',Georgia,serif
 }
 @media(max-width:860px) {
     .serif {
@@ -7477,17 +7490,17 @@ to {
 .skin-menu {
     position:fixed;
     bottom:50px;
-    right:10px;
+    left:10px;
     height:auto;
     width:220px;
     border-radius:5px;
     background-color:#fff;
-    box-shadow:0 1px 40px -8px rgba(0,0,0,.5);
+    box-shadow: 0px 0px 20px 3px rgba(255, 82, 0, 0.39);
     z-index:99;
     font-family:'Ubuntu',sans-serif;
     transform:scaleX(0);
     transition-property:transform,background;
-    transition-duration:.3s,.3s
+    transition-duration:.5s,.5s
 }
 .skin-menu.show {
     transform:scaleX(1)

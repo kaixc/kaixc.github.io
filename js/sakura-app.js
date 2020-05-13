@@ -1502,7 +1502,7 @@ var home = location.href,
                 $('.cd-top.cd-is-visible').css('top', ($(window).height() - 950) + 'px')
               }
           } else {
-            $('.changeSkin-gear').css('bottom', '-999px')
+            $('.changeSkin-gear').css('bottom', '0px')
             $('.cd-top.cd-is-visible').css('top', '-900px')
             $back_to_top.removeClass('cd-is-visible cd-fade-out')
           }
