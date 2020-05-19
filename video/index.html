@@ -11,17 +11,17 @@
   <meta http-equiv="x-dns-prefetch-control" content="on">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
   <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
-  <link rel="stylesheet" id="saukra_css-css" href="https://cdn.jsdelivr.net/gh/kaixc/cdn/css/style.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kaixc/cdn/css/lib.min.css" media="all">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kaixc/cdn/css/font.css" media="all">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kaixc/cdn/css/insight.css" media="all">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kaixc/cdn/css/jquery.fancybox.min.css" media="all">
+  <link rel="stylesheet" id="saukra_css-css" href="/css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/lib.min.css" media="all">
+  <link rel="stylesheet" href="/css/font.css" media="all">
+  <link rel="stylesheet" href="/css/insight.css" media="all">
+  <link rel="stylesheet" href="/css/jquery.fancybox.min.css" media="all">
   <!-- 自定义logo -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kaixc/cdn/css/logo.css">
+  <link rel="stylesheet" type="text/css" href="/css/logo.css">
   <link rel="stylesheet" type="text/css" href="/fonts/LOGO/logo.css">
 
   <!-- <link rel="stylesheet" href="/css/zoom.css" media="all"> -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kaixc/cdn/css/sharejs.css">
+  <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
 <!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
 " type="text/css" media="all"> -->
   <script>
@@ -66,9 +66,9 @@
 </head>
 </html>
 <body onLoad="init()" class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kaixc/miku-in-snow@master/js/ThreeCanvas.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kaixc/miku-in-snow@master/js/Snow.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kaixc/snow@master/js/main.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kaixc/miku-in-snow/js/ThreeCanvas.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kaixc/miku-in-snow/js/Snow.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kaixc/snow/js/main.js"></script>
 
   <div class="scrollbar" id="bar">
   </div>
@@ -85,7 +85,8 @@
         </a>
       </div>
       <div class="header-info">
-        <p>不爱尺壁而重爱寸阴，时难遭而易失也</p>
+        <p><span class="mytype"></span></p>
+        <!-- <p>不爱尺壁而重爱寸阴，时难遭而易失也</p> -->
         <div class="top-social_v2">
           <li id="bg-pre">
             <img class="flipx" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
@@ -645,9 +646,9 @@
 <script type="text/javascript">
   /* <![CDATA[ */
   if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-    var Poi = { "pjax": "1", "movies": { "url": "https://cdn.jsdelivr.net/gh/kaixc/cdn@master/video", "name": "Jackson.mp4", "live": "close" }, "windowheight": "fixed", "codelamp": "close", "ajaxurl": "", "order": "asc", "formpostion": "bottom" };
+    var Poi = { "pjax": "1", "movies": { "url": "https://cdn.jsdelivr.net/gh/kaixc/cdn@master/video", "name": "Jackson_x264.mp4", "live": "close" }, "windowheight": "fixed", "codelamp": "close", "ajaxurl": "", "order": "asc", "formpostion": "bottom" };
   } else {
-    var Poi = { "pjax": "1", "movies": { "url": "https://cdn.jsdelivr.net/gh/kaixc/cdn@master/video", "name": "Jackson.mp4", "live": "open" }, "windowheight": "auto", "codelamp": "close", "ajaxurl": "", "order": "asc", "formpostion": "bottom" };
+    var Poi = { "pjax": "1", "movies": { "url": "https://cdn.jsdelivr.net/gh/kaixc/cdn@master/video", "name": "Jackson_x264.mp4", "live": "open" }, "windowheight": "auto", "codelamp": "close", "ajaxurl": "", "order": "asc", "formpostion": "bottom" };
   }
 /* ]]> */
 
@@ -725,6 +726,26 @@
 <!-- 鼠标经过音符 -->
 <!-- <script src="https://spiritx.xyz/wp-content/cache/autoptimize/js/autoptimize_70f6d365b5a4ebcf8b52a4a19737ae6e.js"></script> -->
 
+<!-- mytype,打字特效 -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js"></script>
+<script>
+    var typed = new Typed(".mytype", {
+        strings: '夫学需静也、才需学也、非学无以广才,\
+        今を戦えない者に、次や未来を語る資格はない!,\
+        Self who can not afford to help， strong strike down,\
+        가장 감사해야 할 것은 신이 주신 능력을 제대로 이용하는 것이다. ,\
+        שהילדים יבואו אליי, אל אסור עליהם, כי זה אדם מסוג זה בממלכת השמים,\
+        僕が持っているものは、すべて努力によって手に入れた,\
+        Деньги пропали - наживешь, время пропало - не вернешь.,\
+        남의 생활과 비교하지 말고 제 자신의생활을 즐겨라.,\
+        Busy collecting bees， to talk with eloquence in front of people。,\
+        悲しみを知ってるほど人を喜ばせる事ができる'.split(","),
+        startDelay: 300,
+        typeSpeed: 100,
+        loop: true,
+        backSpeed: 50
+    });
+</script>
 
     <div class="openNav no-select" style="height: 50px;">
       <div class="iconflat no-select" style="width: 50px; height: 50px;">
@@ -988,14 +1009,13 @@
   
 
   .aplayer.aplayer-fixed .aplayer-lrc {
-    animation: poi-face 27s ease-in-out infinite alternate;
-    width: 40%;
+    animation: float 3s ease-in-out infinite alternate;
+    width: 50%;
     margin: auto;
-    border-radius: 37px;
     box-shadow: 0px 0px 20px 20px rgba(255, 158, 158, 0.37);
     background: rgba(255, 158, 158, 0.37);
     display: block;
-    bottom: -20px;
+    bottom: -37px;
   }
 
   .aplayer .aplayer-lrc.aplayer-lrc-hide {
@@ -1007,7 +1027,7 @@
     display: block;
   }
 </style>
-<meting-js  id="5015612185"  server="netease"  type="playlist"  fixed="true"  autoplay="true"  loop="all"  order="random"  preload="auto"  volume="0.7"  mutex="true"  theme="red"  listfolded="true"  </meting-js>
+<meting-js  id="5015612185"  server="netease"  type="playlist"  fixed="true"  autoplay="true"  loop="all"  order="random"  preload="auto"  volume="0.3"  mutex="true"  theme="red"  listfolded="true"  </meting-js>
   <script>
     $(function () {
       $('body').on('click', '.aplayer', function () {
@@ -1019,5 +1039,5 @@
       })
     });
   </script>
-<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"https://cdn.jsdelivr.net/gh/kaixc/models@master/packages/live2d-widget-model-shizuku/assets/shizuku.model.json"},"display":{"position":"right","width":200,"height":400,"hOffset":0,"vOffset":-20},"mobile":{"show":true,"scale":0.8},"dev":{"border":false},"react":{"opacity":0.8},"dialog":{"enable":true,"hitokoto":true},"log":false});</script></body>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"https://cdn.jsdelivr.net/gh/kaixc/models@master/packages/live2d-widget-model-shizuku/assets/shizuku.model.json"},"display":{"position":"right","width":200,"height":400,"hOffset":0,"vOffset":-20},"mobile":{"show":true,"scale":0.7},"dev":{"border":false},"react":{"opacity":0.8},"dialog":{"enable":true,"hitokoto":true},"log":false});</script></body>
 </html>

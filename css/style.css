@@ -3976,7 +3976,7 @@ li.feature-2 {
     position:relative;
     max-width:800px;
     padding:0 10px;
-    top:35%;
+    top:45%;
     left:50%;
     transform:translate(-50%,-50%);
     -webkit-transform:translate(-50%,-50%);
@@ -4082,8 +4082,8 @@ li.feature-2 {
     box-shadow: 0px 0px 20px 7px #ffffff;
     width:63%;
     margin:auto;
-    font-size:16px;
-    color:#eaeadf;
+    font-size:17px;
+    color:#ffffff;
     background:rgba(0,0,0,.5);
     padding:15px;
     margin-top:22px;
@@ -4104,7 +4104,7 @@ li.feature-2 {
     border-color:transparent transparent rgba(0,0,0,.5) transparent
 }
 .header-info p {
-    text-shadow: 0px 0px 20px rgb(105, 127, 255);
+    text-shadow: 0px 0px 5px #fbff00;
     margin:0;
     font-family:'pingfang sc',sans-serif;
     font-weight:700
@@ -4889,7 +4889,7 @@ h3#comments-list-title,nav#comments-navi {
     background:none
 }
 .iconflat {
-    background:none;
+    background:#00000052;
     width:50px;
     height:50px;
     float:left
